@@ -1,0 +1,31 @@
+Web Design Notes
+https://www.youtube.com/watch?v=5bMdjkfvONE
+
+Prerequisites:
+	- Text Editor (I will be using Notepad++)
+	- Web Broswer (I will be using Google Chrome)
+
+TODOs
+1. Build the project
+	- Creating the folder
+	- Adding Files
+	- Connecting Files
+2. Navbar
+	- 2 Links and a name
+
+3. Portfolio Item Grid
+	- Images
+	- Titles
+	- Descriptions
+	- Animations
+	- Javascript
+
+4. About Page
+	- Image
+	- Split Column Layout
+
+NOTES
+
+Powershell command: 
+cd c:\Users\Miguel\desktop\WebDesign\images\photos
+dir | %{$x=0} {Rename-Item $_ -NewName "cover$x.jpg"; $x++ }
