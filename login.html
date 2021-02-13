@@ -10,5 +10,66 @@
 
 <body>
 
+	<?php 
+		$username = $password = "";
+		$usernameError = $passwordError = "";
+		
+		if($_SERVER["REQUEST_METHOD"] == "POST") {
+			if(empty($_POST["username"])) {
+				$usernameError = "Username is required";
+			}
+			else {
+				$username = login($_POST["username"]);
+			}
+			
+			if(empty($_POST(["password"])) {
+				$passwordError = "Password is required";
+			}
+			else {
+				$password = login($_POST["password"]);
+			}
+		}
+	
+		function login($logincred) {
+			$logincred = trim($logincred);
+			$logincred = stripslashes($logincred);
+			$logincred = htmlspecialchars($logincred);
+			return $logincred;
+		}
+	?>
+	
+	
+	<div class="nav-wrapper"><!--Create nav wrapper class to enclose
+							all the nav bar information and links-->
+			<!--Create class for left side of nav bar-->						
+			<div class="nav-left-side">
+				<div class = "nav-link-wrapper">
+					<a href="index.html">Home</a>
+				</div>
+				<div class = "nav-link-wrapper">
+					<a href="about.html">About</a>
+				</div>
+				<div class = "nav-link-wrapper">
+					<a href = "Photos.html">Photography</a>
+				</div>
+				<div class = "nav-link-wrapper">
+					<a href = "login.html">Log In</a>
+				</div>
+			</div>
+			<!--Create class for right side of nav bar-->
+			<div class = "nav-right-side">
+				<div class = "nav-name-title">
+					<div>Miguel Hernandez</div>
+				</div>
+			</div>
+	</div>
 
+<form method="post" action=" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+	<div class="text-login">
+		Username:<input type="text" name="username"> <br>
+	</div>
+Password:<input type="text" name="password"> <br>
+<input type="submit" name="submit" value="Login">
+</form>
 </body>
+</html>
