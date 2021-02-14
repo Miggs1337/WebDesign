@@ -27,5 +27,5 @@ TODOs
 NOTES
 
 Powershell command: 
-cd c:\Users\Miguel\desktop\WebDesign\WebDesign
+cd c:\Users\Miguel\desktop\mhdesigns
 dir | %{$x=0} {Rename-Item $_ -NewName "cover$x.jpg"; $x++ }

@@ -35,7 +35,6 @@
 
 .nav-name-title{
 	text-transform: uppercase;
-	color: darkgrey;
 }
 
 .nav-link-wrapper a{
@@ -132,3 +131,17 @@
 	border-bottom: 1px solid transparent;
 }
 
+.login-text-box {
+	border:#A9A9A9 solid 1px;
+ }
+ 
+.label {
+    font-weight:bold;
+	width:100px;
+	font-size:14px;
+}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+}
