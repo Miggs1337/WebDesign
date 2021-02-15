@@ -131,9 +131,9 @@
 				
             <div style = "margin:30px">
                
-               <form action = "" method = "post">
-                  <label>Username  :</label><input type = "text" name = "username" class = "login-text-box"/><br /><br />
-                  <label>Password  :</label><input type = "password" name = "password" class = "login-text-box" /><br/><br />
+               <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                  <label>Username  :</label><input type = "text" name = "username" class="login-text-box" value="<?php echo $username;?>">
+                  <label>Password  :</label><input type = "password" name = "password" class = "login-text-box">
                   <input type = "submit" value = "  Login  "/><br />
                </form>
                
